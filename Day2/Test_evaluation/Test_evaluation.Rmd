@@ -83,7 +83,7 @@ tp_model <-
 '
 ```
 
-  * Do you see a something weird here (degrees of freedom vs parameters of interest)
+  * Do you something that may cause a problem here (degrees of freedom vs parameters of interest)?
   * Add a second test and a second population
   * Key assumptions of a latent class model
 
@@ -279,7 +279,8 @@ summary(results)
 
 # Exercise
 
-Run the model and compare the results we the ones obtained from the original Hui-Walter model.
+* Run the model and compare the results we the ones obtained from the original Hui-Walter model.
+* Change the prior distribution for one of the parameters. How does it affect the posterior
 
 # Points to discuss
 
