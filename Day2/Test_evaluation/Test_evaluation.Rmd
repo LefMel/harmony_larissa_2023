@@ -287,8 +287,10 @@ Run the model and compare the results we the ones obtained from the original Hui
 1. Can this type of models support more tests and more populations?
 
 2. What is conditional (in)depedence between diagnostic tests and can we adjust for that?
+Examples: ELISA vs PCR, Raters
 
 3. Three main assumptions of this model
+Different prevalence, Constant Se-Sp, Depedence
 
 
 # Any questions?
