@@ -3,8 +3,6 @@
 
 # How to choose and generate prior distributions?
 
-# Kostas Pateras pdfs on PriorGen and tPriors available in GitHub folder
-
 require(PriorGen)
 
 # Exercise 1: Check if the codes below create the prior parameters for slides 1 to 3.
