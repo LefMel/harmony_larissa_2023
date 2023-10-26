@@ -199,11 +199,11 @@ summary(results)
 ## Points to discuss
 
 
-# 1. What is the latent variable here - also discuss about it tomorrow.
+# 1. Can this type of models support more tests and more populations?
+  
+# 2. What is conditional (in)depedence between diagnostic tests and can we adjust for that?
+  
+# 3. Three main assumptions of this model
 
-# 2. Can this type of models support more tests and more populations?
-  
-# 3. What is conditional (in)depedence between diagnostic tests and can we adjust for that?
-  
 ## Any questions?
   
