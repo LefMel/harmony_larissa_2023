@@ -129,22 +129,30 @@ hw_definition <- c("model{
   #Population_1
   
   # Test1+ Test2+
-
+	prob_1[1] <- (prev[1] * ((se[1])*(se[2]))) + ((1-prev[1]) * ((1-sp[1])*(1-sp[2])))
+  
   # Test1+ Test2-
+	prob_1[2] <- (prev[1] * ((se[1])*(1-se[2]))) + ((1-prev[1]) * ((1-sp[1])*(sp[2])))
 
   # Test1- Test2+
+	prob_1[3] <- (prev[1] * ((1-se[1])*(se[2]))) + ((1-prev[1]) * ((sp[1])*(1-sp[2])))
 
   # Test1- Test2-
-
+	prob_1[4] <- (prev[1] * ((1-se[1])*(1-se[2]))) + ((1-prev[1]) * ((sp[1])*(sp[2])))
+	
 	#Population_2
   
   # Test1+ Test2+
-
+	prob_2[1] <- (prev[2] * ((se[1])*(se[2]))) + ((1-prev[2]) * ((1-sp[1])*(1-sp[2])))
+  
   # Test1+ Test2-
+	prob_2[2] <- (prev[2] * ((se[1])*(1-se[2]))) + ((1-prev[2]) * ((1-sp[1])*(sp[2])))
 
   # Test1- Test2+
+	prob_2[3] <- (prev[2] * ((1-se[1])*(se[2]))) + ((1-prev[2]) * ((sp[1])*(1-sp[2])))
 
   # Test1- Test2-
+	prob_2[4] <- (prev[2] * ((1-se[1])*(1-se[2]))) + ((1-prev[2]) * ((sp[1])*(sp[2])))
 
   prev[1] ~ dbeta(1, 1)
   prev[2] ~ dbeta(1, 1)
@@ -179,10 +187,10 @@ plot(results)
 pt <- plot(results)
 print(pt[["prev[1].plot1"]])
 print(pt[["se[1].plot1"]])
-print(pt[["sp[1].plot1"]])
+print(pt[["sp[1].plot4"]])
 print(pt[["sp[1].plot3"]])
 
-summary(results)
+View(summary(results))
 
 ## Exercise
   
