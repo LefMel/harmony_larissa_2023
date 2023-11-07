@@ -431,7 +431,7 @@ sp <- list(chain1=c(0.5,0.99), chain2=c(0.99,0.5))
 
 results_1 <- run.jags(hw_definition_1, n.chains=2)
 # Remember to check convergence and effective sample size!
-plot(results_2)  # Click backwards to view all plots
+plot(results_1)  # Click backwards to view all plots
 
 pt_1 <- plot(results_1)
 pt_1$`prev[1].plot1`
